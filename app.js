@@ -3,7 +3,7 @@ let city2 =[
     city=city
 ]
 console.log(city2[0])
-fetch("http://api.openweathermap.org/data/2.5/weather?q="+city2[0]+"&units=metric&APPID=5d066958a60d315387d9492393935c19")
+fetch("https://api.openweathermap.org/data/2.5/weather?q="+city2[0]+"&units=metric&APPID=5d066958a60d315387d9492393935c19")
 .then(function(res) {return res.json() })
 .then((data) => {
     console.log(data);
