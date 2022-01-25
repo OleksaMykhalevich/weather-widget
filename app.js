@@ -11,7 +11,7 @@ fetch("http://api.openweathermap.org/data/2.5/weather?q="+city2[0]+"&units=metri
     document.querySelector(".humidity").textContent = ("Humidity:"+data.main.humidity+"%");
     document.querySelector(".pressure").textContent = ("Pressure:"+data.main.pressure+"hPa")
     document.querySelector(".wind").innerHTML = ("Wind:"+data.wind.speed+"km/h "+data.wind.deg+"&deg;")
-    document.querySelector(".img").innerHTML ='<img src="http://openweathermap.org/img/w/'+data.weather[0]['icon']+'.png">'
+    document.querySelector(".img").innerHTML ='<img src="https://openweathermap.org/img/w/'+data.weather[0]['icon']+'.png">'
     document.querySelector(".temp").innerHTML =Math.round(+data.main.temp) + "&deg;"
     document.querySelector(".description").textContent =data.weather[0]['description']
      
